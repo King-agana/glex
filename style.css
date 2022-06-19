@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+body{
+    background-color: hsl(0, 0%, 95 );
+    font-size: 15px;
+}
+ header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 35px;
+    background-color: hsl(0, 0%, 95 );
+}
+
+
+.tall{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+@media (max-width:765px){
+
+      .mainn .tall{
+        /*width: 60%;
+        margin: auto;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 300px;
+                 
+        }
+}
+}
+
+
+
+.tall{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem;
+    height: 400px;
+    padding-top: 100px;
+    
+
+}
+
+.mainn h1{
+    padding-bottom: 20px;
+    color: white;
+    padding-right: 60px;
+    
+}
+
+ .mainn p{
+     color: white;
+ }
+.sedans .button {
+    size: 50px;
+    background-color: hsl(0, 0%, 95 );
+    border-radius: 50px;
+    border: 10px;
+    color: hsl(31, 77%, 52%);
+    padding: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.suv .button:hover, .sedans .button:hover, .luxury .button:hover{
+background-color: transparent;
+color: white;
+border: 2px solid white;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem;
+    height: 400px;
+    padding-top: 100px;
+}
+.suv .button{
+        size: 50px;
+        background-color: hsl(0, 0%, 95 );
+        border-radius: 50px;
+        border: 10px;
+        color: hsl(184, 100%, 22%);
+        padding: 10px;
+        margin-top: 40px;
+        cursor: pointer;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem;
+    height: 400px;
+    padding-top: 100px;
+    
+}
+
+.luxury .button {
+    size: 50px;
+    background-color: hsl(0, 0%, 95 ); 
+    border-radius: 50px;
+    border: 10px;
+    color: hsl(179, 100%, 13%);
+    padding: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.gridd{
+    background-color: hsl(179, 100%, 50%);
+    display: flex;
+    min-height: 70vh;
+    padding: 60px;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+ @media(max-width:765px) {
+    .gridd{
+    background-color: hsl(179, 100%, 50%);
+    display: flex;
+    min-width: 1px;
+    min-height: 60vh;
+    padding: 60px;
+    padding-top: 20px;
+
+    
+    }
+ }
+.gridd{
+    display: grid;
+    grid-template-areas: 
+    'a a a a b b'
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+    gap: 8px;
+    width: 60%;
+    margin: auto;
+}
+
+.gridd div{
+    padding: 2rem;
+    
+}
+
+.item-a{
+    background-color: rgb(5, 5, 110);
+    grid-area: a;
+}
+
+.item-b{
+    background-color: rgb(200, 37, 37);
+    grid-area: b;
+}
+
+.item-c{
+    background-color:black;
+    grid-area: c;
+}
+
+.item-d{
+    background-color: purple;
+    grid-area: d;
+}
+
+.item-e{
+    background-color: yellow;
+    grid-area: e;
+}
